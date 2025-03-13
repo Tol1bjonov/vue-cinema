@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.button{
+    padding: 17px 47px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.button.primary{
+    color: var(--primary-button-color);
+    background-color: var(--primary-button);
+}
+.button.secondary{
+    color: var(--secondary-button-color);
+    background-color: var(--secondary-button);
+}
+
+/*Special offers qismi*/
+.special_offers{
+    background: var(--ad-section-background);
+    display: flex;
+    justify-content: center; /*x oqi boyicha*/
+    align-items: center; /*y oqi buyicha*/
+    padding: 20px 0;
+    gap: 24px;
+}
+.special_offers-text{
+    color: var(--add-section-text-color);
+    max-width: 166px;
+    width: 100%;
+}
+
+
+/*Header*/
+#header{
+    background-color: var(--header-background);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-background);
+    padding: 29px 0;
+}
+.header-left{
+    display: flex;
+    align-items: end;
+    gap: 5px;
+}
+.header-left-text{
+    color: var(--add-section-text-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+.header-right-list{
+    display: flex;
+    gap: 30px;
+}
+.header-right-link{
+    font-size: 14px;
+    color: var(--navigation-links-color);
+    transition: 500ms;
+}
+.header-right-link:hover{
+    color: var(--navigation-links-active-color);
+    position: relative;;
+}
+.header-right-link:hover::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: var(--navigation-links-active-color);
+    bottom: -41px;
+    left: 0;
+}
+
+
+/*Banner section*/
+#banner{
+    background-image: url(../assets/images/banner-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;;
+   padding-top: 183px;
+   padding-bottom: 173px;
+   position: relative;
+}
+#banner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 75%;
+}
+#banner .container{
+    position: relative;
+    z-index: 1;
+}
+.banner-title{
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--white-text-color);
+}
+.banner-description{
+    max-width: 540px;
+    width: 100%;
+    color: var(--banner-description);
+    margin-top: 30px;
+}
+.banner-buttons-wrapper{
+    margin-top: 50px;
+}
