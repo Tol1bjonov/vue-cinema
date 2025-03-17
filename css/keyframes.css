@@ -1,0 +1,39 @@
+@keyframes film-overlay{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes to-up{
+    0%{
+        opacity: 0;
+        transform: translateY(110px);
+    }
+    100%{
+        opacity: 100;
+        transform: translateY(0);
+    }
+}
+@keyframes to-down{
+    0%{
+        opacity: 0;
+        transform: translateY(-110px);
+    }
+    100%{
+        opacity: 100;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pop-up{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
