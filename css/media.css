@@ -1,0 +1,12 @@
+@media (max-width: 768px){
+    .header-right-list{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .mobile-menu{
+        display: flex;
+    }
+}
