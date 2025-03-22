@@ -73,7 +73,7 @@ section{
     justify-content: space-between;
     align-items: center;
     background-color: var(--header-background);
-    padding: 29px 0;
+    padding: 29px 15px;
 }
 .header-left{
     display: flex;
@@ -109,8 +109,27 @@ section{
     bottom: -41px;
     left: 0;
 }
-
-
+.mobile-menu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: none;
+    transform: translateX(100vw);
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.menu-icon{
+    display: none;
+}
+.mobile-menu-link{
+    font-size: 32px;
+    color: var(--white-text-color);
+}
 /*Banner section*/
 #banner{
     background-image: url(../assets/images/banner-background.png);
